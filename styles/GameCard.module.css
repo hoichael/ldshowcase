@@ -19,8 +19,9 @@
     margin-top: 15px;
 }
 
-.title {
+.text {
     width: 80%;
+    height: 30%;
     margin-left: 10%;
     margin-top: 4px;
     font-size: 32px;
@@ -28,16 +29,27 @@
 }
 
 .links {
-    position: absolute;
     width: 80%;
     height: 24%;
     margin-left: 10%;
-    bottom: 16px;
+}
+
+.hide {
+    display: none;
 }
 
 .link {
+    display: inline-block;
     margin-top: 16px;
     color: red;
     font-size: 24px;
+    letter-spacing: normal;
+
+    transition: 0.25s ease-in-out;
+}
+
+.link:hover {
+    letter-spacing: 6px;
+    color: green;
 }
 

@@ -21,10 +21,14 @@ const GameCard: React.FC<Props> = ( { info } ) => {
     return (
         <div className={styles.container} onClick={(e) => {changeHeight(e)}}>
             <img className={styles.thumbnail} src="https://img.itch.zone/aW1nLzI1Mjc0NTkucG5n/315x250%23c/btzn8z.png"></img>
-            <div className={styles.title}>TITLEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</div>
+            <div className={styles.text}>
+                TITLEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+                <br></br>
+                <div className={styles.ld}>(LD69)</div>
+            </div>
             <div className={styles.links}>
-                <div className={styles.link}><a href="https://noahro.itch.io/stabman">Itch Page</a></div>
-                <div className={styles.link}><a href="https://noahro.itch.io/stabman">LD Page</a></div>
+                <div><a className={styles.link} href="https://noahro.itch.io/stabman">Itch Page</a></div>
+                <div><a className={styles.link} href="https://noahro.itch.io/stabman">LD Page</a></div>
             </div>
         </div>
     )
