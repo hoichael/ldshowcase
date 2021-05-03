@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import axios, { AxiosResponse } from "axios"
 import styles from "/styles/Main.module.css"
+
 import Banner from "../components/Banner"
+import GameCard from "../components/GameCard"
 
 export default function Home() {
 
@@ -28,7 +30,10 @@ export default function Home() {
         <Banner />
       </div>
 
-      <div className={styles.midcontainer}></div>
+      <div className={styles.midcontainer}>
+        <GameCard info={{}}/>
+      </div>
+
       <div className={styles.lowercontainer}></div>
 
     </div>

@@ -1,6 +1,17 @@
 .container {
-    width: 680px;
-    height: 500px;
+    width: 325px;
+    height: 260px;
     background-color: black;
+
+    transition: height 1s ease-in-out;
+}
+
+.expanded {
+    height: 600px;
+}
+
+.thumbnail {
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
