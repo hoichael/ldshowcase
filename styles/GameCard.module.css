@@ -1,9 +1,14 @@
 .container {
-    width: 325px;
-    height: 260px;
-    background-color: black;
+    width: 345px;
+    height: 280px;
+    background-color: rgb(16, 0, 85);
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 16px;
+    position: relative;
 
-    transition: height 1s ease-in-out;
+    transition: height 0.8s ease-in-out;
 }
 
 .expanded {
@@ -11,7 +16,28 @@
 }
 
 .thumbnail {
-    margin-left: 5px;
-    margin-top: 5px;
+    margin-top: 15px;
+}
+
+.title {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 4px;
+    font-size: 32px;
+    overflow-wrap: break-word;
+}
+
+.links {
+    position: absolute;
+    width: 80%;
+    height: 24%;
+    margin-left: 10%;
+    bottom: 16px;
+}
+
+.link {
+    margin-top: 16px;
+    color: red;
+    font-size: 24px;
 }
 
