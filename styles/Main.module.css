@@ -6,6 +6,7 @@
 .uppercontainer {
     width: 100%;
     height: 28%;
+    min-height: 180px;
     padding-top: 1px;
     margin-top: -1px;
     background-color: aquamarine;
@@ -14,6 +15,7 @@
 .midcontainer {
     width: 100%;
     height: 62%;
+    min-height: 600px;
     background-color: lightcoral;
 }
 
