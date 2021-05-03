@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import axios, { AxiosResponse } from "axios"
 import styles from "/styles/Main.module.css"
+import Banner from "../components/Banner"
 
 export default function Home() {
 
@@ -24,7 +25,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.uppercontainer}>
-        <button onClick={() => handleClick()}>FETCH</button>
+        <Banner />
       </div>
 
       <div className={styles.midcontainer}></div>
@@ -33,3 +34,5 @@ export default function Home() {
     </div>
   )
 }
+
+// <button onClick={() => handleClick()}>FETCH</button>
