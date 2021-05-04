@@ -1,20 +1,20 @@
 import styles from "/styles/Timeline.module.css"
-import GameCard from "./GameCard"
+import TimelineEntry from "./TimelineEntry"
 
 const Timeline: React.FC = () => {
 
 
     return (
         <div className={styles.container}>
-            <GameCard info={{}}/>
-            <GameCard info={{}}/>
-            <GameCard info={{}}/>
-            <GameCard info={{}}/>
-            <GameCard info={{}}/>
-            <GameCard info={{}}/>
-            <GameCard info={{}}/>
-            <GameCard info={{}}/>
-            <GameCard info={{}}/>
+            <TimelineEntry />
+            <TimelineEntry />
+            <TimelineEntry />
+            <TimelineEntry />
+            <TimelineEntry />
+            <TimelineEntry />
+            <TimelineEntry />
+            <TimelineEntry />
+            <TimelineEntry />
         </div>
     )
 }
