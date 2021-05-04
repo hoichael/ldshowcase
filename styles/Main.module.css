@@ -10,6 +10,14 @@
     margin-top: -1px;
 }
 
+@media only screen and (max-width: 500px) {
+    @media only screen and (max-height: 680px) {
+        .uppercontainer {
+            display: none;
+        }
+    }
+}
+
 .midcontainer {
     width: 100%;
     height: 680px;
