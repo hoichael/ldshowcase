@@ -3,7 +3,7 @@ import axios, { AxiosResponse } from "axios"
 import styles from "/styles/Main.module.css"
 
 import Banner from "../components/Banner"
-import GameCard from "../components/GameCard"
+import Timeline from "../components/Timeline"
 
 export default function Home() {
 
@@ -31,7 +31,7 @@ export default function Home() {
       </div>
 
       <div className={styles.midcontainer}>
-        <GameCard info={{}}/>
+        <Timeline />
       </div>
 
       <div className={styles.lowercontainer}></div>

@@ -1,12 +1,15 @@
 .container {
     width: 345px;
+    min-width: 345px;
     height: 280px;
-    background-color: rgb(16, 0, 85);
+    margin-left: 40px;
+    background-color: rgba(0,0,0,0);
     overflow: hidden;
     text-align: center;
     border: 2px solid black;
     border-radius: 16px;
     position: relative;
+    cursor: pointer;
 
     transition: height 0.8s ease-in-out;
 }
@@ -17,6 +20,7 @@
 
 .thumbnail {
     margin-top: 15px;
+    border-radius: 16px;
 }
 
 .text {
