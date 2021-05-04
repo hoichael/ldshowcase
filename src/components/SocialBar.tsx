@@ -1,10 +1,6 @@
 import styles from "/styles/SocialBar.module.css"
 
-interface Props {
-    which: string;
-}
-
-const SocialBar: React.FC<Props> = ( { which } ) => {
+const SocialBar: React.FC = () => {
 
     return (
         <div className={styles.container}>

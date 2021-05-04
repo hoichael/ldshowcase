@@ -4,6 +4,7 @@ import styles from "/styles/Main.module.css"
 
 import Banner from "../components/Banner"
 import Timeline from "../components/Timeline"
+import SocialBar from "../components/SocialBar"
 
 export default function Home() {
 
@@ -34,7 +35,9 @@ export default function Home() {
         <Timeline />
       </div>
 
-      <div className={styles.lowercontainer}></div>
+      <div className={styles.lowercontainer}>
+        <SocialBar />
+      </div>
 
     </div>
   )

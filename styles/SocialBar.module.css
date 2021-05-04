@@ -1,4 +1,7 @@
 .container {
     width: 400px;
+    height: 80px;
+    margin-top: 4px;
     margin-left: calc(50vw - 200px);
+    background-color: green;
 }

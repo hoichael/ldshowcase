@@ -33,6 +33,7 @@ const Banner: React.FC = () => {
 
     return (
         <div className={styles.container}>
+            <div className={styles.underlinebox}></div>
             <div className={styles.title}>{text}</div>
         </div>
     )
