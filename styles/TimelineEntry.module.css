@@ -1,1 +1,10 @@
+.container {
+    min-width: 550px;
+}
+
+.datecontainer {
+    text-align: center;
+    font-size: 32px;
+}
+
 

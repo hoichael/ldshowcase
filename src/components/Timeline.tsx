@@ -6,15 +6,17 @@ const Timeline: React.FC = () => {
 
     return (
         <div className={styles.container}>
-            <TimelineEntry />
-            <TimelineEntry />
-            <TimelineEntry />
-            <TimelineEntry />
-            <TimelineEntry />
-            <TimelineEntry />
-            <TimelineEntry />
-            <TimelineEntry />
-            <TimelineEntry />
+            <div className={styles.timeline}>
+                <TimelineEntry which="start"/>
+                <TimelineEntry which="mid"/>
+                <TimelineEntry which="mid"/>
+                <TimelineEntry which="mid"/>
+                <TimelineEntry which="mid"/>
+                <TimelineEntry which="mid"/>
+                <TimelineEntry which="mid"/>
+                <TimelineEntry which="mid"/>
+                <TimelineEntry which="end"/>
+            </div>
         </div>
     )
 }
