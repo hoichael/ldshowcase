@@ -1,7 +1,6 @@
 .container {
     width: 250px;
     height: 720px;
-    background-color: chartreuse;
 
     position: absolute;
     top: 199px;
@@ -11,9 +10,10 @@
 }
 
 .left {
-
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgba(255, 255, 255, 0));
 }
 
 .right {
     right: 0;
+    background-image: linear-gradient(to left, rgb(255, 255, 255) , rgba(255, 255, 255, 0));
 }
