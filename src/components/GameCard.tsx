@@ -23,8 +23,6 @@ const GameCard: React.FC<Props> = ( { info } ) => {
             <img className={styles.thumbnail} src="https://img.itch.zone/aW1nLzI1Mjc0NTkucG5n/315x250%23c/btzn8z.png"></img>
             <div className={styles.text}>
                 TITLEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-                <br></br>
-                <div className={styles.ld}>(LD69)</div>
             </div>
             <div className={styles.links}>
                 <div><a className={styles.link} href="https://noahro.itch.io/stabman">Itch Page</a></div>

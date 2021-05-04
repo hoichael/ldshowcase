@@ -6,6 +6,6 @@
 }
 
 .timeline {
-    margin-left: 256px;
+    margin-left: calc(50vw - 345px);
     display: flex;
 }
