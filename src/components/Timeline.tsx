@@ -20,9 +20,9 @@ const Timeline: React.FC = () => {
         console.log(element.scrollLeft);
         console.log(e.deltaY); */
         if(e.detail) {
-            element.scrollLeft += (-1 * (15) * e.detail);
+            element.scrollLeft += (-1 * (12) * e.detail);
         } else {
-            element.scrollLeft += (-1 * (0.35) * e.deltaY);
+            element.scrollLeft += (-1 * (0.38) * e.deltaY);
         }
     }
 

@@ -7,9 +7,10 @@ interface Props {
 const Gradient: React.FC<Props> = ( { which } ) => {
 
     return (
-        <div className={styles["container"] + " " + styles[`${which}`]}>
-
-        </div>
+        <>
+            <div className={styles["container"] + " " + styles[`block${which}`]}></div>
+            <div className={styles["container"] + " " + styles[`${which}`]}></div>
+        </>
     )
 }
 
