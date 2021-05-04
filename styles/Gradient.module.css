@@ -1,11 +1,13 @@
 .container {
-    width: 100px;
-    height: 400px;
+    width: 250px;
+    height: 720px;
     background-color: chartreuse;
 
     position: absolute;
-    top: 0;
+    top: 199px;
+
     z-index: 10;
+    pointer-events: none;
 }
 
 .left {
