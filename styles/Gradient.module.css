@@ -1,0 +1,17 @@
+.container {
+    width: 100px;
+    height: 400px;
+    background-color: chartreuse;
+
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.left {
+
+}
+
+.right {
+    right: 0;
+}
