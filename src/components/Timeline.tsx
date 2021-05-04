@@ -12,7 +12,15 @@ const Timeline: React.FC = () => {
         window.addEventListener("scroll", scroll);
         window.addEventListener('mousewheel', scroll);
         window.addEventListener('DOMMouseScroll', scroll);
+
+        window.addEventListener("mousedown", test)
+        window.addEventListener("mouseup", test)
     }, [])
+
+    function test(e:any):void {
+        console.log("asdfsdfsdfsdf")
+        console.log(e)
+    }
 
     function scroll(e:any):void {
     /*    console.log("asdf")
