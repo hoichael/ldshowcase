@@ -1,19 +1,13 @@
+import SocialIcon from "./SocialIcon"
 import styles from "/styles/SocialBar.module.css"
 
 const SocialBar: React.FC = () => {
 
     return (
             <div className={styles.container}>
-                <div className={styles.icon}>
-                    <img src="github.svg"></img>
-                    <a href="https://github.com/hoichael"></a>
-                </div>
-                <div className={styles.icon}>
-                    <img src="soundcloud.svg"></img>
-                </div>
-                <div className={styles.icon}>
-                    <img src="github.svg"></img>
-                </div>
+                <SocialIcon url="https://github.com/Noah2610" src="github.svg" title="Noah's GitHub"/>
+                <SocialIcon url="https://soundcloud.com/g0rm" src="soundcloud.svg" title="Moritz' SoundCloud"/>
+                <SocialIcon url="https://github.com/hoichael" src="github.svg" title="My Github"/>
             </div>
     )
 }
