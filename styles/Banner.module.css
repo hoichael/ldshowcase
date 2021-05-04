@@ -7,12 +7,14 @@
 }
 
 .title {
-    font-size: 64px;
-    letter-spacing: 12px;
+    font-size: 56px;
+    letter-spacing: 10px;
     word-spacing: 4px;
 }
 
+/*
 .years {
     margin-top: 12px;
     font-size: 32px;
 }
+*/

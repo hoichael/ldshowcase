@@ -7,8 +7,7 @@ const Banner: React.FC = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.title}>Ludum Dare Games</div>
-            <div className={styles.years}>{yearZero} - {yearCurrent}</div>
+            <div className={styles.title}>Ludum Dare Games {yearZero} - {yearCurrent}</div>
         </div>
     )
 }
