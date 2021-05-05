@@ -3,7 +3,11 @@ import styles from "/styles/Timeline.module.css"
 import TimelineEntry from "./TimelineEntry"
 import Gradient from "./Gradient"
 
-const Timeline: React.FC = () => {
+interface Props {
+    info: [[], []] | never[][]
+}
+
+const Timeline: React.FC<Props> = ( { info } ) => {
 
     let element:HTMLElement;
 
@@ -13,9 +17,13 @@ const Timeline: React.FC = () => {
         window.addEventListener('mousewheel', scroll);
         window.addEventListener('DOMMouseScroll', scroll);
 
-        window.addEventListener("mousedown", test)
-        window.addEventListener("mouseup", test)
+    //    window.addEventListener("mousedown", test)
+    //    window.addEventListener("mouseup", test) 
     }, [])
+
+    useEffect(() => {
+
+    }, [info])
 
     function test(e:any):void {
         console.log("asdfsdfsdfsdf")

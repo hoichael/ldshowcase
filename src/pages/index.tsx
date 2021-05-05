@@ -11,6 +11,7 @@ export default function Home() {
 
     const [info, setInfo] = useState([[], []])
 
+    /*
     useEffect(() => {
       let infoTemp = [[], []];
 
@@ -23,7 +24,7 @@ export default function Home() {
           setInfo(infoTemp);
         });
       });
-    },[])
+    },[]) */
 
     function handleClick(): void {
       axios.get('/api/get').then(function(res): void{
@@ -49,7 +50,7 @@ export default function Home() {
         </div>
 
         <div className={styles.midcontainer}>
-          <Timeline />
+          <Timeline info={info}/>
         </div>
 
         <div className={styles.lowercontainer}>

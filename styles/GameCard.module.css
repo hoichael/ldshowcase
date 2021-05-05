@@ -96,12 +96,14 @@
     color: black;
     font-size: 24px;
     letter-spacing: normal;
+    word-spacing: 4px;
     cursor: pointer;
     transition: 0.25s ease-in-out;
 }
 
 .link:hover {
     letter-spacing: 6px;
+    word-spacing: 2px;
     color: #ff6803;
 /*    font-size: 30px; */
 }
