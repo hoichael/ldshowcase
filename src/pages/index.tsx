@@ -13,7 +13,6 @@ export default function Home() {
 
     useEffect(() => {
       let infoTemp = [[], []];
-
       axios.get('/api/getItch').then(function(res): void{
         infoTemp[0] = res.data.data.games;
 
@@ -21,6 +20,10 @@ export default function Home() {
           console.log(res.data.data.entries);
           infoTemp[1] = res.data.data.entries;
           setData(infoTemp);
+
+          setTimeout(() => {
+            document.getElementById("fade")!.classList.remove(styles.show)
+          }, 2000);
         });
       });
 
@@ -33,6 +36,8 @@ export default function Home() {
           <meta name="description" content="Our Ludum Dare game jam entries" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
+
+        <div id="fade" className={styles["fade"] + " " + styles["show"]}></div>
 
         <div className={styles.uppercontainer}>
           <Banner />
