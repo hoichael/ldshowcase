@@ -15,27 +15,27 @@
 
 .left {
     z-index: 10;
-    left:10px;
+    left: 10px;
     width: 70px;
-    background-image: linear-gradient(to right, rgba(192, 241, 253, 1) , rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right, rgb(238, 238, 238), rgba(238, 238, 238, 0));
 }
 
 .right {
     z-index: 10;
     width: 70px;
     right: 10px;
-    background-image: linear-gradient(to left, rgba(192, 241, 253, 1) , rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to left, rgb(238, 238, 238), rgba(238, 238, 238, 0));
 }
 
 .blockleft {
     z-index: 11;
     width: 11px;
-    background-color: rgba(192, 241, 253, 1);
+    background-color: rgb(238, 238, 238);
 }
 
 .blockright {
     z-index: 11;
     right: 0;
     width: 11px;
-    background-color: rgba(192, 241, 253, 1);
+    background-color: rgb(238, 238, 238);
 }

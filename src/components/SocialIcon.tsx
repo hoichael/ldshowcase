@@ -11,7 +11,7 @@ const SocialIcon: React.FC<Props> = ( { url, src, title } ) => {
     return (
         <a className={styles.link} href={url} title={title}>
             <div className={styles.icon}>
-                <img src={src}></img>
+                <img className={styles.img} src={src}></img>
             </div>
         </a>
     )

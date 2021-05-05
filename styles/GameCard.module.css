@@ -102,6 +102,7 @@
 
 .link:hover {
     letter-spacing: 6px;
-    color: rgb(0, 49, 182);
+    color: #ff6803;
+/*    font-size: 30px; */
 }
 

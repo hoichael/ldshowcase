@@ -28,7 +28,7 @@ const SVG: React.FC<Props> = ( { which } ) => {
     return (
         <div className={styles.container}>
             <svg className={styles.svg} viewBox="0 0 40 5" preserveAspectRatio="none">
-                <path className={styles.path} d={path} fill="none" stroke="black"></path>
+                <path className={styles.path} d={path} fill="none" stroke="#ff6803"></path>
             </svg>
         </div>
     )
