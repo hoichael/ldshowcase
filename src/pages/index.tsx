@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import axios, { AxiosResponse } from "axios"
-import { useEffect } from "react"
+import { useState, useEffect } from "react"
 import styles from "/styles/Main.module.css"
 
 import Banner from "../components/Banner"
@@ -9,11 +9,18 @@ import SocialBar from "../components/SocialBar"
 
 export default function Home() {
 
+    const [info, setInfo] = useState([[], []])
+
     useEffect(() => {
+      let infoTemp = [[], []];
+
       axios.get('/api/getItch').then(function(res): void{
-        handleResponse(res);
+        infoTemp[0] = res.data.data.games;
+
         axios.get('/api/getLD').then(function(res): void{
-          handleResponse(res);
+          infoTemp[1] = res.data.data.entries;
+          console.log(infoTemp);
+          setInfo(infoTemp);
         });
       });
     },[])
