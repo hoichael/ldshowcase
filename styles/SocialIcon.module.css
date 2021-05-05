@@ -10,7 +10,7 @@
     filter: invert(43%) sepia(62%) saturate(1478%) hue-rotate(356deg) brightness(99%) contrast(105%);
 }
 
-@media only screen and (max-height: 860px) {
+@media only screen and (max-height: 786px) {
     .icon {
         opacity: 0;
     }

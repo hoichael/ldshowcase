@@ -1,8 +1,9 @@
 import { useState, useRef } from "react"
 import styles from "/styles/GameCard.module.css"
+import GameInterface from "../util/Game"
 
 interface Props {
-   info: object;
+    info: GameInterface;
 }
 
 const GameCard: React.FC<Props> = ( { info } ) => {
@@ -40,13 +41,11 @@ const GameCard: React.FC<Props> = ( { info } ) => {
 
     return (
         <div className={styles["container"] + " " + styles["hover"]} onClick={(e) => {changeHeight(e)}}>
-            <img className={styles.thumbnail} src="https://img.itch.zone/aW1nLzI1Mjc0NTkucG5n/315x250%23c/btzn8z.png"></img>
-            <div className={styles.text}>
-                TITLEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-            </div>
+            <img className={styles.thumbnail} src={info.img}></img>
+            <div className={styles.text}>{info.title}</div>
             <div className={styles.links}>
-                <div><a className={styles.link} href="https://noahro.itch.io/stabman">Itch Page</a></div>
-                <div><a className={styles.link} href="https://noahro.itch.io/stabman">LD Page</a></div>
+                <div><a className={styles.link} href={info.itchLink}>Itch Page</a></div>
+                <div><a className={styles.link} href={info.ldLink}>LD Page</a></div>
             </div>
         </div>
     )

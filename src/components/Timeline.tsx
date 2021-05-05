@@ -3,6 +3,7 @@ import styles from "/styles/Timeline.module.css"
 import TimelineEntry from "./TimelineEntry"
 import Gradient from "./Gradient"
 import formatData from "../util/formatData"
+import GameInterface from "../util/Game"
 
 interface Props {
     data: [[], []] | never[][]
@@ -11,33 +12,23 @@ interface Props {
 const Timeline: React.FC<Props> = ( { data } ) => {
 
     let element:HTMLElement;
-    const [info, setInfo] = useState()
+    const [info, setInfo] = useState<null | GameInterface[]>(null)
+//    const [receivedData, setDataFlag] = useState(false);
 
     useEffect(() => {
         element = document.getElementById("timeline")!;
         window.addEventListener("scroll", scroll);
         window.addEventListener('mousewheel', scroll);
         window.addEventListener('DOMMouseScroll', scroll);
-
-    //    window.addEventListener("mousedown", test)
-    //    window.addEventListener("mouseup", test) 
     }, [])
 
     useEffect(() => {
         if(data[0].length === 0) { return }
         console.log(formatData(data));
+        setInfo(formatData(data));
     }, [data])
 
-    function test(e:any):void {
-        console.log("asdfsdfsdfsdf")
-        console.log(e)
-    }
-
     function scroll(e:any):void {
-    /*    console.log("asdf")
-        console.log(e);
-        console.log(element.scrollLeft);
-        console.log(e.deltaY); */
         if(e.detail) {
             element.scrollLeft += (-1 * (12) * e.detail);
         } else {
@@ -45,19 +36,17 @@ const Timeline: React.FC<Props> = ( { data } ) => {
         }
     }
 
+    function generateEntries() {
+        return info!.map(element => (
+            <TimelineEntry key={element.title} info={element}/>
+        )) 
+    }
+
     return (
         <div id="timeline" className={styles.container}>
             <Gradient which="left"/>
                 <div className={styles.timeline}>
-                    <TimelineEntry which="start"/>
-                    <TimelineEntry which="mid"/>
-                    <TimelineEntry which="mid"/>
-                    <TimelineEntry which="mid"/>
-                    <TimelineEntry which="mid"/>
-                    <TimelineEntry which="mid"/>
-                    <TimelineEntry which="mid"/>
-                    <TimelineEntry which="mid"/>
-                    <TimelineEntry which="end"/>
+                    {info && generateEntries()}
                 </div>
             <Gradient which="right"/>
         </div>

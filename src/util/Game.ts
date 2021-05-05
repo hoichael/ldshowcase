@@ -1,4 +1,4 @@
-interface GameInterface {
+export default interface GameInterface {
     title:string;
     img:string;
     date:string;
