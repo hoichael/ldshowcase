@@ -1,15 +1,17 @@
-import { useEffect } from "react"
+import { useState, useEffect } from "react"
 import styles from "/styles/Timeline.module.css"
 import TimelineEntry from "./TimelineEntry"
 import Gradient from "./Gradient"
+import formatData from "../util/formatData"
 
 interface Props {
-    info: [[], []] | never[][]
+    data: [[], []] | never[][]
 }
 
-const Timeline: React.FC<Props> = ( { info } ) => {
+const Timeline: React.FC<Props> = ( { data } ) => {
 
     let element:HTMLElement;
+    const [info, setInfo] = useState()
 
     useEffect(() => {
         element = document.getElementById("timeline")!;
@@ -22,8 +24,9 @@ const Timeline: React.FC<Props> = ( { info } ) => {
     }, [])
 
     useEffect(() => {
-
-    }, [info])
+        if(data[0].length === 0) { return }
+        console.log(formatData(data));
+    }, [data])
 
     function test(e:any):void {
         console.log("asdfsdfsdfsdf")

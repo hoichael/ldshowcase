@@ -9,9 +9,9 @@ import SocialBar from "../components/SocialBar"
 
 export default function Home() {
 
-    const [info, setInfo] = useState([[], []])
+    const [data, setData] = useState([[], []])
 
-    /*
+    
     useEffect(() => {
       let infoTemp = [[], []];
 
@@ -21,21 +21,11 @@ export default function Home() {
         axios.get('/api/getLD').then(function(res): void{
           infoTemp[1] = res.data.data.entries;
           console.log(infoTemp);
-          setInfo(infoTemp);
+          setData(infoTemp);
         });
       });
-    },[]) */
 
-    function handleClick(): void {
-      axios.get('/api/get').then(function(res): void{
-        handleResponse(res);
-      });
-    }
-
-    function handleResponse(res: AxiosResponse):void {
-      console.log(res);
-      console.log(res.data.data.games)
-    }
+    },[]) 
 
     return (
       <div className={styles.container}>
@@ -50,7 +40,7 @@ export default function Home() {
         </div>
 
         <div className={styles.midcontainer}>
-          <Timeline info={info}/>
+          <Timeline data={data}/>
         </div>
 
         <div className={styles.lowercontainer}>

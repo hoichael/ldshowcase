@@ -17,7 +17,7 @@
     z-index: 10;
     left: 10px;
     width: 70px;
-    background-image: linear-gradient(to right, rgb(238, 238, 238), rgba(238, 238, 238, 0));
+    background-image: linear-gradient(to right, rgb(238, 238, 238), rgba(238, 238, 238, 0)); 
 }
 
 .right {
