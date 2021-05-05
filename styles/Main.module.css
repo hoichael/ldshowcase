@@ -33,15 +33,15 @@
     position: absolute;
     top: -50;
     left: -50;
-    width: 3000px;
-    height: 3000px;
+    width: 100vw;
+    height: 100vh;
     z-index: 99;
     pointer-events: none;
     background-color: rgba(255, 81, 0, 0);
     transition: 2s ease-in-out;
-  }
-  
-  .show {
+}
+
+.show {
     background-color: rgba(238, 238, 238, 1);
     pointer-events: all;
-  }
+}
