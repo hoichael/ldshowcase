@@ -31,10 +31,10 @@
 
 .fade {
     position: absolute;
-    top: -50;
-    left: -50;
-    width: 3000px;
-    height: 3000px;
+    top: 160px;
+    left: 0;
+    width: 100vw;
+    height: 680px;
     z-index: 99;
     pointer-events: none;
     background-color: rgba(255, 81, 0, 0);

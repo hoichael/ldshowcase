@@ -23,7 +23,7 @@ export default function Home() {
 
           setTimeout(() => {
             document.getElementById("fade")!.classList.remove(styles.show)
-          }, 2000);
+          }, 200);
         });
       });
 
