@@ -24,7 +24,7 @@ const Timeline: React.FC<Props> = ( { data } ) => {
 
     useEffect(() => {
         if(data[0].length === 0) { return }
-        console.log(formatData(data));
+    //    console.log(formatData(data));
         setInfo(formatData(data));
     }, [data])
 

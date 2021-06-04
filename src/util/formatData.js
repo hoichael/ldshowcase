@@ -12,7 +12,7 @@ export default function formatData(data) {
             orderedItchData[i].cover_url || "thumbnail_placeholder.png",
             orderedItchData[i].created_at.slice(0, orderedItchData[i].created_at.indexOf(" ")),
             orderedItchData[i].url,
-            ldData[ldData.length - 1 - orderedItchData.length + i].link,
+            ldData[i + 4].link,
             getSVGtype(i, orderedItchData.length),
         ))
     }

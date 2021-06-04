@@ -17,7 +17,7 @@ export default function Home() {
         infoTemp[0] = res.data.data.games;
 
         axios.get('/api/getLD').then(function(res): void{
-          console.log(res.data.data.entries);
+        //  console.log(res.data.data.entries);
           infoTemp[1] = res.data.data.entries;
           setData(infoTemp);
 
