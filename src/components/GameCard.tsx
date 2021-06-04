@@ -39,13 +39,18 @@ const GameCard: React.FC<Props> = ( { info } ) => {
         element.current.removeEventListener("transitionend", changeClass)
     }
 
+    function openLink(e:any, url:string) {
+        e.preventDefault();
+        window.open(url);
+    }
+
     return (
         <div className={styles["container"] + " " + styles["hover"]} onClick={(e) => {changeHeight(e)}}>
             <img className={styles.thumbnail} src={info.img}></img>
             <div className={styles.text}>{info.title}</div>
             <div className={styles.links}>
-                <div><a className={styles.link} href={info.itchLink}>Itch Page</a></div>
-                <div><a className={styles.link} href={info.ldLink}>LD Page</a></div>
+                <div><a className={styles.link} href={info.itchLink} onClick={(e) => openLink(e, info.itchLink)}>Itch Page</a></div>
+                <div><a className={styles.link} href={info.ldLink} onClick={(e) => openLink(e, info.ldLink)}>LD Page</a></div>
             </div>
         </div>
     )

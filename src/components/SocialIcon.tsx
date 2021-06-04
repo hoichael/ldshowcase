@@ -8,8 +8,13 @@ interface Props {
 
 const SocialIcon: React.FC<Props> = ( { url, src, title } ) => {
 
+    function openLink(e:any, url:string) {
+        e.preventDefault();
+        window.open(url);
+    }
+
     return (
-        <a className={styles.link} href={url} title={title}>
+        <a className={styles.link} href={url} title={title} onClick={(e) => openLink(e, url)}>
             <div className={styles.icon}>
                 <img className={styles.img} src={src}></img>
             </div>
